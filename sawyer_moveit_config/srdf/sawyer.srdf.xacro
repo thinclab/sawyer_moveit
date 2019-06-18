@@ -17,8 +17,13 @@
   </xacro:if>
 
   <!--Right End Effector Collisions-->
+<!--
   <xacro:if value="$(arg electric_gripper)">
     <xacro:include filename="$(find sawyer_moveit_config)/srdf/rethink_electric_gripper.srdf.xacro" />
     <xacro:rethink_electric_gripper side="right"/>
   </xacro:if>
+-->
+    <xacro:include filename="$(find sawyer_moveit_config)/srdf/robotiq_2f_gripper.srdf.xacro" />
+
+
 </robot>
