@@ -4,7 +4,7 @@
   <!--SRDF Xacro Args-->
   <xacro:arg name="tip_name" default="right_hand"/>
   <xacro:arg name="electric_gripper" default="false"/>
-  <xacro:arg name="controller_box" default="true"/>
+  <xacro:arg name="controller_box" default="false"/>
 
   <!--Base Sawyer Collisions-->
   <xacro:include filename="$(find sawyer_moveit_config)/srdf/sawyer_base.srdf.xacro" />

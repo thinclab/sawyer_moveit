@@ -5,7 +5,7 @@
   <!-- Set the kinematic tips for the left_arm and right_arm move_groups -->
   <arg name="tip_name" default="right_hand"/>
   <!-- Add controller box collision shape to check for link collisions if set to true-->
-  <arg name="controller_box" default="true"/>
+  <arg name="controller_box" default="false"/>
 
 
   <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
@@ -23,7 +23,7 @@
           electric_gripper:=$(arg electric_gripper)
           tip_name:=$(arg tip_name)
           controller_box:=$(arg controller_box)"/>
-  
+
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
     <rosparam command="load" file="$(find sawyer_moveit_config)/config/joint_limits.yaml"/>

@@ -11,7 +11,7 @@
   <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
   <arg name="load_robot_description" default="false"/>
   <!-- Add controller box collision shape to check for link collisions if set to true-->
-  <arg name="controller_box" default="true"/>
+  <arg name="controller_box" default="false"/>
   <!-- Left and electric gripper arg. Set to true to check for collisions for their links -->
   <arg name="electric_gripper" default="false"/>
   <!-- Set the kinematic tip for the right_arm move_group -->
