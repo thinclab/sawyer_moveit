@@ -1,5 +1,5 @@
+<?xml version="1.0"?>
 <launch>
-
   <arg name="rviz_config" default="$(find sawyer_moveit_config)/launch/moveit.rviz" />
 
   <arg name="debug" default="false" />
